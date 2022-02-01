@@ -1,14 +1,49 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Belajar ReactJs</title>
-    </head>
-    <body>
-        <h1>Selamat datang di kelas ReactJs</h1>
-        <p>ini adalah sebuah paragraf</p>
-        <p><b>Sanbercode</b> membantu anda belajar <b>intensif</b>membuat website, mobile apps</p>
-        <p>Silahkan kunjungi <a href="https://github.com/YakinHabib/repo3"> github </a> berikut</p>
-        
+  <head>
+    <title>CSS Display</title>
+  </head>
+  <style>
+    * {
+      
+      padding : 15px 15px;
+      margin: 5px 10px;
+    }
+    header *, main, aside{
+        display: inline-block;
+    }
+    aside{
+        height: 1000px;
+        width: 200px;
+    }
 
-        <img src="https://sanbercode.com/assets/img/identity/logo-horizontal.svg" width="200">
-    </body>
+    main{
+        height: 1000px;
+        width: 600px;
+        margin: auto;
+    }
+
+    header { background: lightblue; }
+    aside { background: lightgreen; }
+    main { background: yellow; }
+    footer { background: orange; }    
+  </style>
+  <body>
+    <header>
+      <h1 id="logo">Logo</h1>
+      <h1 id="title">Title</h1>
+      <h3 id="navbar">Navigation Bar</h3>
+    </header>
+    <aside>
+      <h1>Sidebar</h1>
+    </aside>
+    <main>
+      <div>
+        <h1>Main Content and Article</h1>
+      </div>
+    </main>
+    <footer>
+      <h1>Footer</h1>
+    </footer>
+  </body>
 </html>
