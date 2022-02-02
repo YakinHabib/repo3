@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CSS Display</title>
-  </head>
+
+<head>
+  <title>Inline CSS</title>
   <style>
-    * {
-      
-      padding : 15px 15px;
-      margin: 5px 10px;
-    }
-    header *, main, aside{
-        display: inline-block;
-    }
-    aside{
-        height: 1000px;
-        width: 200px;
+    .card {
+      position: relative;
+      box-shadow: 0px 2px 10px lightgrey;
+      padding-bottom: 10px;
+      width: 250px;
+      border-radius: 10px;
+      background: lightgrey;
     }
 
-    main{
-        height: 1000px;
-        width: 600px;
-        margin: auto;
+    h1 {
+      text-align: center;
+      padding: 20px;
     }
 
-    header { background: lightblue; }
-    aside { background: lightgreen; }
-    main { background: yellow; }
-    footer { background: orange; }    
+    p {
+      background: white;
+      padding: 10px;
+      margin: 0 10px;
+    }
+
+    .description {
+      margin: 5px;
+      border-radius: 10px;
+    }
+
+    #close-button {
+      right: 10px;
+      position: absolute;
+      font-size: 22px;
+    }
   </style>
-  <body>
-    <header>
-      <h1 id="logo">Logo</h1>
-      <h1 id="title">Title</h1>
-      <h3 id="navbar">Navigation Bar</h3>
-    </header>
-    <aside>
-      <h1>Sidebar</h1>
-    </aside>
-    <main>
-      <div>
-        <h1>Main Content and Article</h1>
+</head>
+
+<body>
+  <div class="card">
+    <span id="close-button">&#10006;</span>
+    <h1>Mr Snuggles</h1>
+    <div style="width: 100%">
+      <img width="100%"
+        src="https://skilvul-assets-01.s3-ap-southeast-1.amazonaws.com/lesson/intro-to-css/cat.jpg" />
+      <div class="description">
+        <p>I like warm places.</p>
+        <p>If it fits, I sits.</p>
       </div>
-    </main>
-    <footer>
-      <h1>Footer</h1>
-    </footer>
-  </body>
+    </div>
+  </div>
+
+</body>
 </html>
